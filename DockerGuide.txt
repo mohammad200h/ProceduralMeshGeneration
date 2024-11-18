@@ -1,0 +1,12 @@
+
+Build:
+sudo docker build  --network=host --build-arg UNAME=$USER --build-arg UID=$UID  -t ubuntu23_10:ProceduralMeshGeneration  .
+
+Then create a container using following command:
+
+sudo docker run --runtime=nvidia  -it  --name ProceduralMeshGeneration -v $(pwd)/ProceduralMeshGeneration:$(pwd)/ProceduralMeshGeneration -e DISPLAY -e LOCAL_USER_ID=$(id -u)  --user=$(id -u) -e QT_X11_NO_MITSHM=1  -v /tmp/.X11-unix:/tmp/.X11-unix:rw  --net=host --privileged ubuntu23_10:ProceduralMeshGeneration
+
+
+
+
+

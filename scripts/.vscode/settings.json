@@ -1,0 +1,5 @@
+{
+  "python.analysis.extraPaths": [
+    "/home/mamad/.vscode-server/extensions/roipoussiere.cadquery-0.1.3/stubs"
+  ]
+}

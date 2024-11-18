@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "proceduralmeshgeneration"
+version = "0.1.0"
+description = ""
+authors = ["mohammad <mohammad200h@hotmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.11.10"
+numpy = "1.26.4"
+pyvista = "^0.44.1"
+cadquery = {path = "cadquery"}
+jupyter = "^1.1.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

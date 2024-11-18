@@ -1,0 +1,7 @@
+##### installation ######
+poetry env use /usr/local/bin/python3.11
+poetry add ./cadquery
+
+##### jupytor notebook ######
+
+
